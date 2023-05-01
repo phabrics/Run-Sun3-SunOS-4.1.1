@@ -125,9 +125,9 @@ disk partition sizes:
 ```
    Start  Length
 a    0    156 cyl is about  20 MB (root) # blocks 39936
-b  157    122 cyl is about  32 MB (swap) # blocks 32940
+b  157    122 cyl is about  20 MB (swap) # blocks 32940
 c    0   2046 cyl is about 512 MB (all ) # blocks 523776
-g  278   1768 cyl is about 442 MB (/usr) # blocks 452608
+g  278   1768 cyl is about 200 MB (/usr) # blocks 452608
 ```
 Enter the partitioner and use these values:
 ```
