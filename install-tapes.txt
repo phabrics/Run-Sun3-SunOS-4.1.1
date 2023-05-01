@@ -1,0 +1,12 @@
+TME requires you to unload the tape before loading another tape.
+
+command tape0 unload
+
+# 1st installation tape, use during suninstall software form
+
+command tape0 load sunos411/01 sunos411/02 sunos411/03 sunos411/04 sunos411/05 sunos411/06 sunos411/07  sunos411/08  sunos411/09  sunos411/10  sunos411/11 sunos411/12 sunos411/13 sunos411/14 sunos411/15 sunos411/16 sunos411/17 sunos411/18 sunos411/19 sunos411/20 sunos411/21 sunos411/22 sunos411/23 sunos411/24 sunos411/25 sunos411/26 sunos411/27 sunos411/28 sunos411/29
+
+# 2rd installation tape
+
+command tape0 load sunos411/30 sunos411/31 sunos411/32 sunos411/33 sunos411/34 sunos411/35 sunos411/36 sunos411/37 sunos411/38
+

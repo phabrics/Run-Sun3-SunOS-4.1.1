@@ -1,0 +1,25 @@
+#!/bin/sh
+mt -f /dev/nrst9 status
+echo tpboot.sun3
+dd if=tpboot.sun3 of=/dev/nrst9 bs=1b conv=sync
+sleep 15
+echo tape1_xdrtoc
+dd if=SunOS411.sun3.QIC-24a.xdrtoc of=/dev/nrst9 bs=1b conv=sync
+sleep 15
+echo munix_sun3
+dd if=munix_sun3 bs=1b conv=sync|dd of=/dev/nrst9 bs=32k
+sleep 15
+echo munixfs
+dd if=munixfs_sun3 bs=1b conv=sync|dd of=/dev/nrst9 bs=32k
+sleep 15
+echo miniroot_sun3
+dd if=miniroot_sun3 bs=1b conv=sync|dd of=/dev/nrst9 bs=32k
+sleep 15
+for i in sun3_proto_root.sunos_4_1_1.tar sun3_usr.tar sun3_kvm.tar sun3_install.tar sun3_networking.tar sun3_system_v.tar sun3_sys.tar sun3_sunview_users.tar sun3_sunview_demo.tar sun3_text.tar sun3_demo.tar sun3_openwindows_users.tar  sun3_openwindows_demo.tar sun3_openwindows_fonts.tar sun3_user_diag.tar sun3_manual.tar sun3_tli.tar sun3_rfs.tar sun3_debugging.tar sun3_sunview_programmers.tar sun3_shlib_custom.tar sun3_graphics.tar sun3_uucp.tar ;do
+echo $i
+dd if=$i.Z bs=1b conv=sync|dd of=/dev/nrst9 bs=32k
+sleep 15 ;done
+echo copyright_sun3_tape1
+dd if=copyright_sun3_tape1 of=/dev/nrst9 bs=1b conv=sync
+sleep 15
+mt -f /dev/nrst9 status

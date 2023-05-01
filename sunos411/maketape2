@@ -1,0 +1,17 @@
+#!/bin/sh
+echo SunOS411.sun3.QIC-24b.xdrtoc
+dd if=SunOS411.sun3.QIC-24b.xdrtoc of=/dev/nrst9 bs=1b conv=sync
+sleep 15
+echo SunOS411.sun3.QIC-24b.xdrtoc
+dd if=SunOS411.sun3.QIC-24b.xdrtoc of=/dev/nrst9 bs=1b conv=sync
+sleep 15
+for i in sun3_games.tar sun3_versatec.tar sun3_security.tar sun3_openwindows_programmers.tar sun3_patch_ipc.tar sun3_patch_cplusplus_2_0.tar sun3_patch_taac.tar ;do
+echo $i
+dd if=$i.Z bs=1b conv=sync|dd of=/dev/nrst9 bs=32k
+sleep 15
+done
+sleep 15
+echo copyright_sun3_tape2
+dd if=copyright_sun3_tape2 of=/dev/nrst9 bs=1b conv=sync
+sleep 15
+mt -f /dev/nrst1 status

@@ -1,0 +1,7 @@
+#! /bin/bash
+
+export LTLD_LIBRARY_PATH=/opt/tme/lib
+PATH=$PATH:/opt/tme/bin
+
+tme-sun-idprom 3/150 8:0:20:11:22:33 > sun3-idprom.bin
+tme-sun-eeprom < sun3-carrera-eeprom.txt > sun3-eeprom.bin

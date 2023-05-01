@@ -1,0 +1,55 @@
+This Archive contains files and programs suitable for installing
+SunOS 4.1.1 for sun3/sun3x architectures. It is derived from the
+Sun3x install tapes and Sun3 "live" installs.
+
+--------------------------------------------------------------------------------
+
+
+Legal Stuff  -- READ THIS!
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This archive is for people who own a Sun3/Sun3x machine and wish to get it
+running. We have had no explicit permission from Sun to publish this material,
+having contacted Sun on the issue and had no reply in several months.
+
+We see of no reason why owners of old Sun machines cannot
+obtain a copy of install media, especially with Sun no longer supporting
+these machines and telling customers to "get a copy elsewhere".
+
+I (Stuart Croy) accept personal responsibility for the contents herein. If
+you feel that maintaining this archive is unacceptable, please do not
+hesitate to contact me.
+
+Note that the distribution is not in the original format that Sun provided
+and thus is not representative of the product that Sun shipped.
+(The changes are slight however)
+
+The files and programs in this archive are to be used at your own risk.
+I will not be held responsible for damange to data or equipment incurred by
+use of the above mentioned programs/files.
+
+--------------------------------------------------------------------------------
+
+OK...
+
+Scripts will be appearing soon to put together a Sun3/Sun3x boot tape or
+'fake CD' install via disk or network.
+`
+I'm rather busy right now (just moved flat) and the other oldkit archive
+maintainers are off on holiday, so things will be slooooow for a while.
+
+Stuart 14/7/97
+
+
+It has been pointed out that sun3_openwindows_demos.tar.gz and
+sun3_openwindows.user.tar.gz are corrupted. These file will be replaced
+soon, when my 3/80 at home is back up.
+
+Stuart 16/8/97
+
+
+As it happens I was just carrying a SunOs 4.1.1 tape about with me :)
+and so the "sun3_openwindows_demos.tar.gz" and "sun3_openwindows.users.tar.gz"
+have been restored.
+
+Lucien 20/8/97

@@ -1,0 +1,6 @@
+#! /bin/bash
+
+export LTLD_LIBRARY_PATH=/opt/tme/lib
+export LD_LIBRARY_PATH=/opt/tme/lib:/opt/tme/lib/tme
+
+exec /opt/tme/bin/tmesh "$@"

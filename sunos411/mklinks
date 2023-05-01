@@ -1,0 +1,57 @@
+#!/bin/bash
+
+ln -s tpboot.sun3			01
+ln -s SunOS411.sun3.QIC-24a.xdrtoc	02
+ln -s munix_sun3			03
+ln -s munixfs_sun3			04
+ln -s miniroot_sun3			05
+
+n=6
+
+for i in sun3_proto_root.sunos_4_1_1.tar \
+	     sun3_usr.tar \
+	     sun3_kvm.tar \
+	     sun3_install.tar \
+	     sun3_networking.tar \
+	     sun3_system_v.tar \
+	     sun3_sys.tar \
+	     sun3_sunview_users.tar \
+	     sun3_sunview_demo.tar \
+	     sun3_text.tar \
+	     sun3_demo.tar \
+	     sun3_openwindows_users.tar  \
+	     sun3_openwindows_demo.tar \
+	     sun3_openwindows_fonts.tar \
+	     sun3_user_diag.tar \
+	     sun3_manual.tar \
+	     sun3_tli.tar \
+	     sun3_rfs.tar \
+	     sun3_debugging.tar \
+	     sun3_sunview_programmers.tar \
+	     sun3_shlib_custom.tar \
+	     sun3_graphics.tar \
+	     sun3_uucp.tar
+do
+    ln -s $i.Z $(printf "%02d" $n)
+    (( n++ ))
+done
+
+ln -s copyright_sun3_tape1 $(printf "%02d" $n)
+
+ln -s SunOS411.sun3.QIC-24b.xdrtoc 30
+
+n=31
+
+for i in sun3_games.tar \
+	     sun3_versatec.tar \
+	     sun3_security.tar \
+	     sun3_openwindows_programmers.tar \
+	     sun3_patch_ipc.tar \
+	     sun3_patch_cplusplus_2_0.tar \
+	     sun3_patch_taac.tar
+do
+    ln -s $i.Z $(printf "%02d" $n)
+    (( n++ ))
+done
+
+ln -s copyright_sun3_tape2 $(printf "%02d" $n)

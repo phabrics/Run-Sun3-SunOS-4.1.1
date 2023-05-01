@@ -1,0 +1,76 @@
+This Archive contains files and programs suitable for installing
+SunOS 4.1.1 for sun3/sun3x architectures. It is derived from the
+Sun3x install tapes and Sun3 "live" installs.
+
+--------------------------------------------------------------------------------
+
+
+Legal Stuff  -- READ THIS!
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This archive is for people who own a Sun3/Sun3x machine and wish to get it
+running. We have had no explicit permission from Sun to publish this material,
+having contacted Sun on the issue and had no reply in several months.
+
+We see of no reason why owners of old Sun machines cannot
+obtain a copy of install media, especially with Sun no longer supporting
+these machines and telling customers to "get a copy elsewhere".
+
+I (Stuart Croy) accept personal responsibility for the contents herein. If
+you feel that maintaining this archive is unacceptable, please do not
+hesitate to contact me.
+
+Note that the distribution is not in the original format that Sun provided
+and thus is not representative of the product that Sun shipped.
+(The changes are slight however)
+
+The files and programs in this archive are to be used at your own risk.
+I will not be held responsible for damange to data or equipment incurred by
+use of the above mentioned programs/files.
+
+--------------------------------------------------------------------------------
+
+OK...
+
+Scripts will be appearing soon to put together a Sun3/Sun3x boot tape or
+'fake CD' install via disk or network.
+`
+I'm rather busy right now (just moved flat) and the other oldkit archive
+maintainers are off on holiday, so things will be slooooow for a while.
+
+Stuart 14/7/97
+
+
+It has been pointed out that sun3_openwindows_demos.tar.gz and
+sun3_openwindows.user.tar.gz are corrupted. These file will be replaced
+soon, when my 3/80 at home is back up.
+
+Stuart 16/8/97
+
+
+As it happens I was just carrying a SunOs 4.1.1 tape about with me :)
+and so the "sun3_openwindows_demos.tar.gz" and "sun3_openwindows.users.tar.gz"
+have been restored.
+
+Lucien 20/8/97
+
+
+I put this tape-images to www.sun3arc.org as a pure mirror of
+what's on the original site. I don't know what the legal status is but
+I'm sad of so many people asking me for boot-images and I always have to
+say "sorry...Sun still holds the copyright so I can't put it up". Now I'm not
+the first one to do this and my trials to get a statement from sun also 
+failed because no one I asked could tell me who's responsible. So if I violate
+something please tell me and I'll take this stuff away. 
+
+Heiko 25/11/97 
+
+On wednesday, May 20th 1998 I got an answer to the legal status of puting
+SunOS online from the sales-representive of SUN Microsystems Germany
+(section Research&Education) and he allowed us to put the Bootimages online
+as long as we don' use them in a commercial manner. Looks like if this
+problem is solved...he allowed us even more but that takes some more
+time...
+
+
+Heiko 23/05/98
